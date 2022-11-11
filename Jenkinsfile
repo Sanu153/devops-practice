@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("sanu153/devopspractic")
+        app = dockeree.build("sanu153/devopspractic")
     }
 
     stage('Test image') {
