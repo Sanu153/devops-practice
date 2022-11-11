@@ -12,7 +12,8 @@ node {
          * docker build on the command line */
 
         // app = docker.build("sanu153/devops-practice")
-        app = docker.build 'devops-practice:snapshot'
+        // app = docker.build 'devops-practice:snapshot'
+        app = docker.build("devops-practice", "/Users/evossolutions/Workshop/live_codes/devops/devops-tutorial/")
     }
 
     stage('Test image') {
