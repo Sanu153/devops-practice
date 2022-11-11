@@ -7,12 +7,12 @@ node {
         checkout scm
     }
 
-    stage('Build image') {
-        /* This builds the actual image; synonymous to
-         * docker build on the command line */
+    // stage('Build image') {
+    //     /* This builds the actual image; synonymous to
+    //      * docker build on the command line */
 
-        app = dockeree.build("sanu153/devopspractic")
-    }
+    //     app = docker.build("sanu153/devopspractic")
+    // }
 
     stage('Test image') {
         /* Ideally, we would run a test framework against our image.
