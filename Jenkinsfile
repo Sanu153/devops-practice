@@ -14,7 +14,7 @@ node {
         // app = sudo.docker.build("sanu153/devops-practice")
         // app = docker.build 'devops-practice:snapshot'
         // app = docker.build("devops-practice", "/Users/evossolutions/Workshop/live_codes/devops/devops-tutorial/")
-        app = sh 'sudo -S docker build -t sanu153/devops-practice .'
+        app = sh 'echo '' | sudo -S docker build -t sanu153/devops-practice .'
     }
 
     stage('Test image') {
